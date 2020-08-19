@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('hello world')
+          title: Text('')
         ),
         body:Center(
           child:Column(children:<Widget>[
@@ -26,17 +26,23 @@ class _MyAppState extends State<MyApp> {
               child:Text('Date/time/image'),
               height:250,
               width:350,
+              color:Colors.grey,
               alignment: Alignment.center,
               margin: EdgeInsets.all(20),
-              color:Colors.grey,
             ),
             Container(
-              child: Text("plans/makeplan"),
-              margin: EdgeInsets.all(20),
               height:340,
               width:350,
-              alignment: Alignment.center,
               color:Colors.grey,
+              margin: EdgeInsets.all(20),
+              child: Column(children: <Widget>[
+                Container(
+                  width:350,
+                  color:Colors.black54,
+                  child:Padding(
+                    child:Text("Events", textAlign: TextAlign.center,),
+                    padding: EdgeInsets.all(10.0),
+                  ),),],),
             ),
           ],),
         )
